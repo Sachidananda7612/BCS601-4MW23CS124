@@ -2,18 +2,23 @@
 <html>
 <head>
     <title>Fibonacci App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>Fibonacci Series Generator</h1>
+<div class="container">
+    <h1>Fibonacci Generator</h1>
 
-<form method="POST">
-    <input name="num" placeholder="Enter number">
-    <button type="submit">Generate</button>
-</form>
+    <form method="POST">
+        <input name="num" placeholder="Enter number" required>
+        <br>
+        <button type="submit">Generate</button>
+    </form>
 
-<h2>Result:</h2>
-<p>{{ result }}</p>
+    <div class="result">
+        {{ result }}
+    </div>
+</div>
 
 </body>
 </html>
